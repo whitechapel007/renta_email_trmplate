@@ -5,28 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Email Template</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              white: "#ffffff",
+              purple: "#35208c",
+            },
+          },
+        },
+      };
+    </script>
+
     <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+    </style>
   </head>
-  <body>
-    <div>
-      <img src="./assets/Frame 10.png" alt="rentaa logo" />
-    </div>
+  <body class="overflow-x-hidden bg-purple">
+    <div class="flex flex-col items-center p-2 m-6 mx-2">
+      <div class="mb-8">
+        <img src="./assets/Frame 10.png" alt="rentaa logo" />
+      </div>
 
-    <div class="container">
-      <h1>Welcome to Rentaa</h1>
-      <p>Hi Daniel Jesusegun,</p>
-      <p>
-        Thank you for creating a Rentaa account. We just need you to verify your
-        account. Click on the button below to verify your account.
-      </p>
-      <button>Verify Your Account</button>
-      <p>Or copy and paste the link below in your browser</p>
-      <a href="#"> http://rentaa.xyz/account/verify/344fhdi554uh7WEUh95 </a>
+      <div
+        class="flex flex-col text-left container bg-white h-100 mt-2 mb-3 mx-4 px-8 py-12 w-100 text-sm"
+      >
+        <h1 class="text-center mb-8 text-xl md:text-2xl">Welcome to Rentaa</h1>
+        <p class="pb-4 md:text-xl">Hi Daniel Jesusegun,</p>
+        <p class="pb-4 text-xs md:text-lg md:w-90">
+          Thank you for creating a Rentaa account. We just need you to verify
+          your account. Click on the button below to verify your account.
+        </p>
+        <button
+          class="overflow-x-hidden text-center bg-purple text-white p-4 self-center w-40 mx-10 mb-6"
+        >
+          Verify Your Account
+        </button>
+        <p class="text-sm mt-4 mb-2 md:text-lg">
+          Or copy and paste the link below in your browser
+        </p>
+        <a href="#" class="overflow-x-hidden w-70 my-4 md:text-lg">
+          http://rentaa.xyz/account/verify/
+        </a>
 
-      <p>
-        Thank you. <br />
-        Rentaa squad
-      </p>
+        <p class="mt-8 md:text-xl">
+          Thank you. <br />
+          Rentaa squad
+        </p>
+      </div>
     </div>
   </body>
 </html>

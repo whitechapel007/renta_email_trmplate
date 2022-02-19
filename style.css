@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
 
-:root {
-  --purple: #35208c;
-  --white: #ffffff;
+ /* :root {
+  
+  --white: #ffffff;--purple: #35208c;
 }
 html {
   padding: 0;
@@ -70,4 +70,4 @@ button {
     border: 0;
     width: initial;
   }
-}
+}  */
